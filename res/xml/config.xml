@@ -11,7 +11,7 @@
 
     <icon src="icon.png" />
 	
-    <content src="index.html" />
+    <content src="http://applab.thenetworks.de/" />
 
    <preference
         name="loglevel"

@@ -11,8 +11,6 @@
 
     <icon src="icon.png" />
 	
-    <content src="http://applab.thenetworks.de/" />
-
    <preference
         name="loglevel"
         value="DEBUG" />

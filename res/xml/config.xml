@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget
+    id="de.thenetworks.applab"
+    version="2.0.0"
+    xmlns="http://www.w3.org/ns/widgets" >
+
+    
+    <name>AppLab</name>
+    <description>The Networks AppLab</description>
+    <author href="http://www.design-busse.de" email="cb@design-busse.de">design:busse</author>
+
+    <icon src="icon.png" />
+	
+    <content src="index.html" />
+
+   <preference
+        name="loglevel"
+        value="DEBUG" />
+    
+     <preference name="splashscreen" value="load" />
+    <!--  <preference name="backgroundColor" value="0xFFF" />
+      <preference name="loadUrlTimeoutValue" value="20000" />
+      <preference name="InAppBrowserStorageEnabled" value="true" />
+      <preference name="disallowOverscroll" value="true" />
+    -->
+	<preference name="stay-in-webview" value="false"/>
+	<access origin="*" browserOnly="true" />
+	<preference name="fullscreen" value="true" />
+	<preference name="orientation" value="portrait" />	
+	<preference name="splashscreen" value="splash" />
+    
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	
+	
+    <feature name="App" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.App" />
+    </feature>
+    <feature name="Geolocation" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.GeoBroker" />
+    </feature>
+    <feature name="Device" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.Device" />
+    </feature>
+    <feature name="Accelerometer" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.AccelListener" />
+    </feature>
+    <feature name="Compass" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.CompassListener" />
+    </feature>
+    <feature name="Media" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.AudioHandler" />
+    </feature>
+    <feature name="Camera" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.CameraLauncher" />
+    </feature>
+    <feature name="Contacts" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.ContactManager" />
+    </feature>
+    <feature name="File" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.FileUtils" />
+    </feature>
+    <feature name="NetworkStatus" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.NetworkManager" />
+    </feature>
+    <feature name="Notification" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.Notification" />
+    </feature>
+    <feature name="Storage" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.Storage" />
+    </feature>
+    <feature name="FileTransfer" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.FileTransfer" />
+    </feature>
+    <feature name="Capture" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.Capture" />
+    </feature>
+    <feature name="Battery" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.BatteryListener" />
+    </feature>
+    <feature name="Echo" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.Echo" />
+    </feature>
+    <feature name="Globalization" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.Globalization" />
+    </feature>
+	
+	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
+	<gap:plugin name="org.li8.inappbrowser" version="0.1" />
+
+
+
+</widget>

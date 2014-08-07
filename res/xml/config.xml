@@ -16,11 +16,13 @@
         value="DEBUG" />
     
      <preference name="splashscreen" value="load" />
-    <!--  <preference name="backgroundColor" value="0xFFF" />
+	 <preferencve name="inappbrowser" value="scaleable" />
+		 <preference name ="backgroundhide" value="systemoption" / >
+  <preference name="backgroundColor" value="0xFFF" />
       <preference name="loadUrlTimeoutValue" value="20000" />
       <preference name="InAppBrowserStorageEnabled" value="true" />
       <preference name="disallowOverscroll" value="true" />
-    -->
+   
 	<preference name="stay-in-webview" value="false"/>
 	<access origin="*" browserOnly="true" />
 	<preference name="fullscreen" value="true" />
@@ -36,6 +38,9 @@
             name="android-package"
             value="org.apache.cordova.App" />
     </feature>
+	<feature name="inapbrowser" >
+	
+	<
     <feature name="Geolocation" >
         <param
             name="android-package"

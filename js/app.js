@@ -47,16 +47,9 @@ var init = {
 			final_token = data.registrationId;
 			window.localStorage.setItem("token", final_token);
 			alert(final_token);
-			$.ajax({
-				type: 'GET',
-				url: 'http://ncore.webentwicklungsserver.com/de/admin?login=appuser',
-				data:  { puash: 1, os: 2, token: final_token },
-				crossDomain: true,
-				cache: false,
-				success: function(response) {
-					
-				}
-			});
+			
+			$('#website').attr("src", "http://applab.thenetworks.de/?login=appuser&token="+final_token+"&os=2&push=1");
+			
 		});
 		
 		push.on('notification', function(data) {				

@@ -46,6 +46,7 @@ var init = {
 		push.on('registration', function(data) {
 			final_token = data.registrationId;
 			window.localStorage.setItem("token", final_token);
+			alert('token'+final_token);
 			
 			$.ajax({
 				type: 'GET',
@@ -54,9 +55,10 @@ var init = {
 				crossDomain: true,
 				cache: false,
 				success: function(response) {
-					
+					alert('response'+response);
 				}
 			});
+			
 		});
 		
 		push.on('notification', function(data) {				
@@ -86,33 +88,12 @@ function onFileSystemSuccess(fileSystem) {
 		onGetFileSuccess,
 		onFail
 	);
-	/*alert(fileSystem.root.toURL());
-	alert(fileSystem.root.toInternalURL());
-	alert(fileSystem.root.nativeURL);*/
 	
 }
 
 //  Hole Root Verzeichnis
 function onGetFileSuccess(fileEntry) {
 	var path = fileEntry.toURL().replace('index.html', ''); // URL der offenen Datei!
-	/*
-		Download starten
-	
-	var fileTransfer = new FileTransfer();
-	fileEntry.remove();
-	fileTransfer.download(
-		'http://apps.design-busse.de/ngk/images/pdf/leitfaden.pdf',
-		path + 'leitfaden.pdf',
-		function(file) {
-			//alert('Download erfolgreich, datei wird geöffnet: ' + file.toURI());
-			showPDF(file.toURI());
-		},
-		function(error) {
-			alert('download error source ' + error.source);
-			alert('download error target ' + error.target);
-			alert('upload error code: ' + error.code);
-		}
-	);*/
 }
 
 function onResolveSuccess(fileEntry){

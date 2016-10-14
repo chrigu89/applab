@@ -49,8 +49,8 @@ var init = {
 			
 			$.ajax({
 				type: 'GET',
-				url: 'http://apps.design-busse.de/ngk/ios/api.php?rquest=set_device',
-				data:  { os: 2, token: final_token },
+				url: 'http://ncore.webentwicklungsserver.com/admin?login=appuser',
+				data:  { os: 2, push: 1, token: final_token },
 				crossDomain: true,
 				cache: false,
 				success: function(response) {

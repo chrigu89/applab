@@ -46,7 +46,6 @@ var init = {
 		push.on('registration', function(data) {
 			final_token = data.registrationId;
 			window.localStorage.setItem("token", final_token);
-			alert(final_token);
 			
 			$('#website').attr("src", "http://applab.thenetworks.de/?login=appuser&token="+final_token+"&os=2&push=1");
 			

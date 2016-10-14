@@ -108,6 +108,7 @@
 		<access origin="https://*" />
 		<access origin="debug.phonegap.com" /> <!-- see: http://community.phonegap.com/nitobi/topics/error_whitelist_rejection -->
 		
+	
 	<!-- PG Plugins-->
 		<preference name="android-build-tool" value="gradle" />
 		
@@ -115,12 +116,17 @@
 			<param name="SENDER_ID" value="245131791687" />
 		</plugin>
 
+
+		<plugin name="cordova-plugin-calendar" />
 		<plugin name="cordova-plugin-file" />
+		<plugin name="cordova-plugin-file-transfer" />
+		<plugin name="cordova-plugin-file-opener2" />
 		<plugin name="cordova-plugin-inappbrowser" />
 		<plugin name="cordova-plugin-network-information" />
 		<plugin name="cordova-plugin-statusbar" />
 		<plugin name="cordova-plugin-device" />
 		<plugin name="cordova-plugin-whitelist" />
+		
 		
 		<!--
 		-->

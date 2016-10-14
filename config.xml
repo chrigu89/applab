@@ -6,15 +6,15 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
 		id        = "de.thenetworks.applab"
-		versionCode = "12"
+		versionCode = "13"
 		version   = "3.0.0">
 		
 	<name>AppLab</name>
     <description>The Networks AppLab</description>
-    <author href="https://bitbew.gmbh" email="info@bitbrew.gmbh">Bitbrew GmbH</author>
+    <author href="https://bitbrew.gmbh" email="info@bitbrew.gmbh">Bitbrew GmbH</author>
 
 	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-		<string>12</string>
+		<string>13</string>
 	</gap:config-file>
 
 	<gap:platform name="ios" />
@@ -51,12 +51,6 @@
 		<preference name="SplashScreenDelay" value="1500" />
 		<preference name="SplashShowOnlyFirstTime" value="true" />
 		
-		<!-- 
-		<splash src="fr-xhdpi.png" gap:qualifier="fr-xhdpi" />
-		<splash src="portrait-xxhdpi.png" gap:qualifier="port-xxhdpi" />
-		<splash src="landscape-xxhdpi.png" gap:qualifier="land-xxhdpi" /> 
-		-->
-
 
 	<!-- GENERAL -->
 		<preference name="phonegap-version" value="cli-6.3.0" /> <!-- Alte Version 3.7.0 -->
@@ -121,8 +115,6 @@
 			<param name="SENDER_ID" value="245131791687" />
 		</plugin>
 
-
-		<plugin name="cordova-plugin-calendar" />
 		<plugin name="cordova-plugin-file" />
 		<plugin name="cordova-plugin-inappbrowser" />
 		<plugin name="cordova-plugin-network-information" />

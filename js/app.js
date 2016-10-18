@@ -55,13 +55,20 @@ var init = {
 				os = 2;
 				//Android
 			}
-			
-			$('#website').attr("src", "http://applab.thenetworks.de/?login=appuser&token="+final_token+"&os='+os+'&push=1");
-			
+			if($('#website').attr("src") == "loading.html") {
+				$('#website').attr("src", "http://applab.thenetworks.de/?login=appuser&token="+final_token+"&os="+os+"&push=1");
+			}
 		});
 		
 		push.on('notification', function(data) {				
-			alert(data.title + ': ' + data.message);
+			if($('#website').attr("src") == "loading.html") {
+				$('#website').attr("src", "http://applab.thenetworks.de/?login=appuser&token="+final_token+"&os="+os+"&push=1");	
+			}
+			if(confirm(data.title + ': ' + data.message)) {
+			
+				var token = window.btoa(JSON.stringify(data));
+				$('#website').attr("src", "http://applab.thenetworks.de/?token="+token);
+			}
 		});
 
 

@@ -70,7 +70,7 @@ var init = {
 				$('#website').attr("src", "http://applab.thenetworks.de/?token="+token);
 			}
 		});
-
+		
 
 		window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFail);  // TEMPORARY oder PERSISTENT
 

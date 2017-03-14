@@ -7,14 +7,14 @@
 		xmlns:android = "http://schemas.android.com/apk/res/android"
 		id        = "de.thenetworks.applab"
 		versionCode = "13"
-		version   = "3.0.0">
+		version   = "3.0.1">
 		
 	<name>AppLab</name>
     <description>The Networks AppLab</description>
     <author href="https://bitbrew.gmbh" email="info@bitbrew.gmbh">Bitbrew GmbH</author>
 
 	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-		<string>13</string>
+		<string>15</string>
 	</gap:config-file>
 
 	<gap:platform name="ios" />
@@ -73,7 +73,7 @@
 
 
 	<!-- ANDROID ONLY -->
-		<preference name="android-minSdkVersion" value="13" />
+		<preference name="android-minSdkVersion" value="15" />
 		<preference name="splash-screen-duration" value="99999"/>
 		<preference name="AndroidPersistentFileLocation" value="Compatibility" /> <!--Compatibility / Internal -->
 		<preference name="InAppBrowserStorageEnabled" value="true"/>

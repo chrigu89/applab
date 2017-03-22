@@ -61,14 +61,15 @@ var init = {
 			}
 		});
 		
-		push.on('notification', function(data) {				
-			if($('#website').attr("src") == "loading.html") {
-				$('#website').attr("src", "http://applab.thenetworks.de/?login=appuser&token="+final_token+"&os="+os+"&push=1");	
-			}
-			if(confirm(data.title + ': ' + data.message)) {
+		push.on('notification', function(data) {
 			
-				var token = window.btoa(JSON.stringify(data));
-				$('#website').attr("src", "http://applab.thenetworks.de/?token="+token);
+			if($('#website').attr("src") == "loading.html") {
+				$('#website').attr("src", "http://applab.thenetworks.de/?login=appuser&token="+final_token+"&os="+os+"&push=1");
+			}
+			if(data.title && data.message) {
+				website.contentWindow.postMessage(JSON.stringify(data), '*');
+				//var token = window.btoa(JSON.stringify(data));
+				//$('#notify').attr("src", "http://applab.thenetworks.de/?token="+token);
 			}
 		});
 		

@@ -113,7 +113,7 @@ se
 		<preference name="android-build-tool" value="gradle" />
 		
 		<plugin name="phonegap-plugin-push" source="npm">
-			<param name="SENDER_ID" value="620690747883" />
+			<param name="SENDER_ID" value="917336741210" />
 		</plugin>
 
 

@@ -47,7 +47,7 @@ var init = {
 			final_token = data.registrationId;
 			window.localStorage.setItem("token", final_token);
 			
-			alert(final_token);
+			//alert(final_token);
 			var os = 1;
 			if(final_token.length == 64) {
 				os = 1;

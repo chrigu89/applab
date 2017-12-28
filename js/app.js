@@ -74,14 +74,9 @@ var init = {
 		});
 		
 
-		
-		var setting = true; // boolean 
-		community.preventsleep.setPreventSleep(setting, onSuccess, onError));
-		// Callback functions will get String result for debugging 
-		 
-		community.preventsleep.getPreventSleepStatus(onSuccess, onError);
-		// onSuccess will get a boolean value for the state of the screen 
 
+		var mainloopid = setInterval(mainloop, 1000);
+		
 		window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFail);  // TEMPORARY oder PERSISTENT
 
 
@@ -95,14 +90,9 @@ var init = {
 	}
 };
 init.initialize();
-
-
-function onSuccess(data) {
-	 alert('keep awake');
-	
-}function onError(data) {
-	 alert('ups no keep awake');
-	
+function mainloop {
+    alert('test');
+    window.plugins.insomnia.keepAwake();
 }
 // Dateisystem erfolgreich geladen!
 function onFileSystemSuccess(fileSystem) {

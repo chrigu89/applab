@@ -30,7 +30,6 @@ var init = {
 		document.addEventListener("online", onOnline, false);
 		document.addEventListener("offline", onOffline, false);
 		
-		alert('debug');
 		
 		var push = PushNotification.init({
 			android: {
@@ -44,7 +43,6 @@ var init = {
 			windows: {}
 		});
 		
-		alert('debug2');
 		push.on('registration', function(data) {
 			final_token = data.registrationId;
 			window.localStorage.setItem("token", final_token);
@@ -63,7 +61,6 @@ var init = {
 			}
 		});
 		
-		alert('debug3');
 		push.on('notification', function(data) {
 			
 			if($('#website').attr("src") == "loading.html") {
@@ -78,13 +75,9 @@ var init = {
 		
 
 
-		alert('debug4');
 		var mainloopid = setInterval(mainloop, 1000);
 		
-		alert('debug5');
 		window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFail);  // TEMPORARY oder PERSISTENT
-
-		alert('debug6');
 
 	},
 	onDomReady: function() {
@@ -97,7 +90,6 @@ var init = {
 };
 init.initialize();
 function mainloop() {
-    alert('test');
     window.plugins.insomnia.keepAwake();
 }
 // Dateisystem erfolgreich geladen!

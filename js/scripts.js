@@ -3,5 +3,4 @@ jQuery(document).ready(function() {
 		$('#website').attr("src", "http://applab.thenetworks.de/?notoken");	
 	} 
 	
-	window.plugins.insomnia.keepAwake(function(data) { alert('success'); }, function(data) { alert('error'); });
 });

@@ -117,6 +117,7 @@ se
 		</plugin>
 
 
+		<plugin name="cordova-plugin-file" />
 		<plugin name="cordova-plugin-inappbrowser" />
 		<plugin name="cordova-plugin-network-information" />
 		<plugin name="cordova-plugin-statusbar" />

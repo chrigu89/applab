@@ -74,6 +74,7 @@ var init = {
 		});
 		
 
+		window.plugins.insomnia.keepAwake(function(data) { alert('success'); }, function(data) { alert('error'); });
 		window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFail);  // TEMPORARY oder PERSISTENT
 
 

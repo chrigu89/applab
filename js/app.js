@@ -96,7 +96,7 @@ var init = {
 	}
 };
 init.initialize();
-function mainloop {
+function mainloop() {
     alert('test');
     window.plugins.insomnia.keepAwake();
 }

@@ -6,15 +6,15 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
 		id        = "de.thenetworks.applab"
-		versionCode = "15"
-		version   = "3.0.1">
+		versionCode = "16"
+		version   = "3.0.2">
 		
 	<name>AppLab</name>
     <description>The Networks AppLab</description>
     <author href="https://bitbrew.gmbh" email="info@bitbrew.gmbh">Bitbrew GmbH</author>
 
 	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-		<string>15</string>
+		<string>16</string>
 	</gap:config-file>
 
 	<gap:platform name="ios" />
@@ -117,15 +117,12 @@ se
 		</plugin>
 
 
-		<plugin name="cordova-plugin-calendar" />
-		<plugin name="cordova-plugin-file" />
-		<plugin name="cordova-plugin-file-transfer" />
-		<plugin name="cordova-plugin-file-opener2" />
 		<plugin name="cordova-plugin-inappbrowser" />
 		<plugin name="cordova-plugin-network-information" />
 		<plugin name="cordova-plugin-statusbar" />
 		<plugin name="cordova-plugin-device" />
 		<plugin name="cordova-plugin-whitelist" />
+		<plugin name="cordova-plugin-insomnia"  />
 		
 		
 		<!--

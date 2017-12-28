@@ -123,7 +123,7 @@ se
 		<plugin name="cordova-plugin-statusbar" />
 		<plugin name="cordova-plugin-device" />
 		<plugin name="cordova-plugin-whitelist" />
-		<plugin name="cordova-plugin-insomnia"  />
+		<plugin name="cordova-plugin-preventsleep"  />
 		
 		
 		<!--

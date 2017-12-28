@@ -74,7 +74,14 @@ var init = {
 		});
 		
 
-		window.plugins.insomnia.keepAwake(function(data) { alert('success'); }, function(data) { alert('error'); });
+		
+		var setting = true; // boolean 
+		community.preventsleep.setPreventSleep(setting, onSuccess, onError));
+		// Callback functions will get String result for debugging 
+		 
+		community.preventsleep.getPreventSleepStatus(onSuccess, onError);
+		// onSuccess will get a boolean value for the state of the screen 
+
 		window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFail);  // TEMPORARY oder PERSISTENT
 
 
@@ -89,6 +96,14 @@ var init = {
 };
 init.initialize();
 
+
+function onSuccess(data) {
+	 alert('keep awake');
+	
+}function onError(data) {
+	 alert('ups no keep awake');
+	
+}
 // Dateisystem erfolgreich geladen!
 function onFileSystemSuccess(fileSystem) {
 	 fileSystem.root.getFile(
